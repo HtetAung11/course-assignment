@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Holiday Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        a{
+                color: black;
+                font-size: 12px;
+                font-weight: bold;
+               text-decoration: none;
+              
+            }
+        .slide-show{
+            width: 100%;
+            height: 400px;
+        }
+        .bg-text{
+            color: white;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.8 );
+            padding: 10px;
+            border: 1px solid black;
+            width: 300px;
+            height: auto;
+            position: absolute;
+            text-align: left;
+            z-index: 2;
+            font-size: 12px;
+            top: 40%;
+            right: 10%;
+            transform: translate(-50%,-50%);
+        }
+        .group{
+            z-index: 2;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            left: 25%;
+            top: 60%;
+        }
+        .row{
+            font-size: 14px;
+            margin: 20px;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .row div div{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid" style="padding: 0;">
+    <nav class="container navbar navbar-expand-sm bg-gray navbar-light" >
+        <a href="#" class="navbar-brand font-weight-bold" style="width: 300px;text-align: center;color: lightgreen;"><i class="fa fa-home" style="font-size: 30px;"></i>Holliday Homes</a>
+        <ul class="navbar-nav mr-auto" style="font-size: 14px;">
+            <li class="nav-item">
+                <a href="#" class="nav-link active">HOME</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">ABOUT US</a></li>
+            <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">SERVICES</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Booking</a>
+                    <a href="#" class="dropdown-item">Food</a>
+                    <a href="#" class="dropdown-item">Room</a>
+                </div>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">GALLERY</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">CONTACT US</a></li>
+            
+        </ul>
+        <form class="form-inline  my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+           <i class="fa fa-search" style="position:relative;z-index:1;left:-30px;"></i>
+          </form>
+    </nav>
+
+<div class="slideshow">
+        <img src="home-bg.jpg" alt="bg" width="100%" height="400px">
+        <div class="bg-text">
+            <h2>SPEND YOUR DREAM HOLLIDAY!</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ipsum. Corporis ex architecto voluptate velit! Suscipit dolorem magni velit reprehenderit sit accusantium laboriosam repellat non iure voluptatum sapiente, perspiciatis autem.</p>
+            <button class="btn btn-danger" type="button">LEARN MORE</button>
+        </div>
+        <div class="group">
+        <button class="btn btn-success" type="button"><i class="fa fa-chevron-left" style="color: white;"></i></button>
+        <button class="btn btn-success" type="button"><i class="fa fa-chevron-right" style="color: white;"></i></button>
+    </div>
+</div>
+<div class="container">
+    <div class="row text-center">
+        <div class="col-sm">
+            <i class="fa fa-key" style="font-size: 50px;"></i><br>
+            <div style="color: red;text-align: center;">Rent direct from the owner</div>
+        </div>
+        <div class="col-sm">
+            <i class="fa fa-money" style="font-size: 50px;"></i><br>
+            <div style="color: red;text-align: center;">No commision</div>
+        </div>
+        <div class="col-sm">
+            <i class="fa fa-calendar" style="font-size: 50px;"></i><br>
+            <div style="color: red;text-align: center;">Flexible rental dates</div>
+        </div>
+        <div class="col-sm">
+            <i class="fa fa-eye-slash" style="font-size: 50px;"></i><br>
+            <div style="color: red;text-align: center;">Space & privacy</div>
+        </div>
+
+    </div>
+</div>
+</div>
+<div class="container">
+    <h2 class="mt-5 font-weight-bold text-center">TOP HOLIDAY DESTINATION</h2>
+    <div class="btngp" style="text-align: center;">
+        <button type="button " class="btn btn-success" style="margin:10px;padding-left:50px;padding-right: 50px;">Omaha Beach</button>
+        <button type="button " class="btn btn-light "  style="margin:10px;padding-left:50px;padding-right: 50px;">Lake Wanaka</button>
+        <button type="button " class="btn btn-light " style="margin:10px;padding-left:50px;padding-right: 50px;">Mangawhai Heads</button>
+        <button type="button " class="btn btn-light " style="margin:10px;padding-left:50px;padding-right: 50px;">Taupo Central</button>
+      </div>
+      <div class="row mt-4">
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <img src="holiday1.jpg" class="w-100 ">
+            <p>
+                Swimming pool, many drinks and best seat for relaxing, 
+            </p>
+        </div> 
+        <div class="col-sm-4 col-md-4 col-lg-4 ">
+          <img src="holiday2.jpg" class="w-100 ">
+          <p>
+              Meet the best beach by going out from resort and get some fresh air
+          </p>
+      </div> 
+      <div class="col-sm-4 col-md-4 col-lg-4">
+          <img src="holiday3.jpg" class="w-100">
+          <p>
+              Beautiful bar and meet with your loving at there, At there you can get many kind of drinks
+          </p>
+      </div> 
+      </div>
+      <div class="row mt-2">
+          <div class="col-sm-4 col-md-4 col-lg-4">
+              <img src="holiday4.jpg" class="w-100 ">
+              <p>
+                  In front of your resort, there're car services for traveling other atteractive place of island
+              </p>
+          </div> 
+          <div class="col-sm-4 col-md-4 col-lg-4 ">
+            <img src="holiday5.jpg" class="w-100 ">
+            <p>
+                In the middle of island, it's the world most beautiful resort
+            </p>
+        </div> 
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <img src="holiday6.jpg" class="w-100">
+            <p>
+                the resort street are loveable and beautiful, you can take a walk peacefully
+            </p>
+        </div> 
+      </div>
+</div>
+<div class="container-fluid bg-light ">
+    <div class="container pt-4" >
+        <h3 class=" "style="text-align: center;">TESTMONIALS </h3>
+  
+        <div class="row pt-4">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <img src="couple.jpg" class="w-50 " style="border-radius: 50%;margin-left: 25%;height: 100px;">
+                <p class="pt-4">Lorem ipsum dolor sit,quam praesentium quos dicta similique perferendis adipisci corrupti repellat sapiente?</p>
+                <p style="float: right;">LINDA &  KEVIN JOHNSON </p>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <img src="developer1.jpg" class="w-50  " style="border-radius: 50%;margin-left: 25%;height:100px;">
+                <p class="pt-4">Lorem ipsum dolor sit,  Minus fuga tatis consequatur voluptates at? Velit magni accusamus enim dolorum tempore et omnis!</p>
+                <p style="float: right;">John SMITH </p>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <img src="myphoto.jpg" class="w-50  " style="border-radius: 50%;margin-left: 25%;height:100px;">
+                <p class="pt-4">Lorem ipsum dolor sit,  Minus fuga tatis consequatur voluptates at? Velit magni accusamus enim dolorum tempore et omnis!</p>
+                <p style="float: right;">Htet Aung </p>
+            </div>
+           
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-success pt-3 ">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <h4  style="color: white;font-weight: bold;">ABOUT</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nihil dicta quam ab veniam velit assumenda! Debitis quasi, sit laborum numquam consequatur aliquid voluptates quidem pariatur consectetur, expedita dignissimos architecto!</p>
+                
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <h4 style="color: white;font-weight: bold;" >USEFUL ADVICE</h4>
+              <a href="">LAW SUPPORT</a><br>
+               <a href="">INSURANCE</a><br>
+               <a href="" >PARTY DECORATION</a><br>
+               <a href="">PARTNERS PROGRAM</a>
+                
+               
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <h4 style="color: white;font-weight: bold;" >GET IN TOUCH</h4>
+               
+                <form>
+                    <div class="form-group">
+                      
+                      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                      
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail">
+                      </div>
+                     
+                    <div class="form-group">
+                     
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message.."></textarea>
+                    </div>
+                    <button type="button" class="btn btn-danger">Send Message</button>
+                  </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <p style="font-size: 13px;">Holiday homes for rent © 2019<br>
+                All rights reserved, Term of use | privacy Policy</p>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <i class="fa fa-twitter " style="color:white;font-size:20px;"></i>
+                <i class="fa fa-facebook pl-4" style="color:white;font-size:20px;"></i>
+                <i class="fa fa-instagram pl-4 " style="color:white;font-size:20px;"></i>
+                <i class="fa fa-wifi pl-4" style="color:white;font-size:20px;"></i>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+               
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
